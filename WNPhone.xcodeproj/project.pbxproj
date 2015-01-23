@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23B4BE8C63D926A612FC3CBB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC599AC8E20C8CE26168FDC0 /* Security.framework */; };
+		2C376FAA5F58182FD74E6A6A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C3F4B22A23C46C616993DA /* AudioToolbox.framework */; };
+		818205A44A548796C40C28C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 942791CFEE305BC79E3AA846 /* UIKit.framework */; };
+		890970C07F44B18913CC9092 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025D8459675BCC18647D7750 /* Foundation.framework */; };
+		8ED2D2CCEE9CE75F061ACAC1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30E3531740B3F2DFDED1925 /* SystemConfiguration.framework */; };
+		9A021C4E1A71F47900D9FCE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A021C4D1A71F47900D9FCE7 /* AppDelegate.m */; };
+		9A021C541A71F48700D9FCE7 /* incoming.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9A021C4F1A71F48700D9FCE7 /* incoming.wav */; };
+		9A021C551A71F48700D9FCE7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A021C501A71F48700D9FCE7 /* Info.plist */; };
+		9A021C561A71F48700D9FCE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A021C511A71F48700D9FCE7 /* main.m */; };
+		9A021C571A71F48700D9FCE7 /* ringback.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9A021C531A71F48700D9FCE7 /* ringback.wav */; };
+		9A021C591A71F49900D9FCE7 /* Sinch.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A021C581A71F49900D9FCE7 /* Sinch.xcassets */; };
+		9A021C631A71F4AB00D9FCE7 /* RPSlidingMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A021C5E1A71F4AB00D9FCE7 /* RPSlidingMenuCell.m */; };
+		9A021C641A71F4AB00D9FCE7 /* RPSlidingMenuLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A021C601A71F4AB00D9FCE7 /* RPSlidingMenuLayout.m */; };
+		9A021C651A71F4AB00D9FCE7 /* RPSlidingMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A021C621A71F4AB00D9FCE7 /* RPSlidingMenuViewController.m */; };
+		9A021C6A1A71F4BB00D9FCE7 /* AppDelegate+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A021C671A71F4BB00D9FCE7 /* AppDelegate+UI.m */; };
+		9A021C6B1A71F4BB00D9FCE7 /* CallViewController+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A021C691A71F4BB00D9FCE7 /* CallViewController+UI.m */; };
+		9A021C721A71F4CF00D9FCE7 /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A021C6D1A71F4CF00D9FCE7 /* CallViewController.m */; };
+		9A021C731A71F4CF00D9FCE7 /* SINUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A021C6F1A71F4CF00D9FCE7 /* SINUIViewController.m */; };
+		9A021C741A71F4CF00D9FCE7 /* WNPCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A021C711A71F4CF00D9FCE7 /* WNPCarViewController.m */; };
+		9A021C761A71F4DC00D9FCE7 /* MainStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A021C751A71F4DC00D9FCE7 /* MainStoryBoard.storyboard */; };
+		9A1D7E331A70ABC0001611B3 /* Sinch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1D7E321A70ABC0001611B3 /* Sinch.framework */; };
+		9A78F0AE1A71E04200EC4F39 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A78F0AD1A71E04200EC4F39 /* CoreGraphics.framework */; };
+		9A78F0B21A71EE9E00EC4F39 /* WNPDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A78F0B01A71EE9E00EC4F39 /* WNPDetailViewController.m */; };
+		9A78F0B31A71EE9E00EC4F39 /* WNPDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A78F0B11A71EE9E00EC4F39 /* WNPDetailViewController.xib */; };
+		AFD3D1A37353D8D3A6CBA220 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 858CDB607F162D29151DE477 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		025D8459675BCC18647D7750 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		578F96AF4F91F77EA1692297 /* WNPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WNPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		858CDB607F162D29151DE477 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		942791CFEE305BC79E3AA846 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9A021C4C1A71F47900D9FCE7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = WNPhone/AppDelegate.h; sourceTree = "<group>"; };
+		9A021C4D1A71F47900D9FCE7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = WNPhone/AppDelegate.m; sourceTree = "<group>"; };
+		9A021C4F1A71F48700D9FCE7 /* incoming.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = incoming.wav; path = WNPhone/incoming.wav; sourceTree = "<group>"; };
+		9A021C501A71F48700D9FCE7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = WNPhone/Info.plist; sourceTree = "<group>"; };
+		9A021C511A71F48700D9FCE7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = WNPhone/main.m; sourceTree = "<group>"; };
+		9A021C521A71F48700D9FCE7 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = WNPhone/Prefix.pch; sourceTree = "<group>"; };
+		9A021C531A71F48700D9FCE7 /* ringback.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ringback.wav; path = WNPhone/ringback.wav; sourceTree = "<group>"; };
+		9A021C581A71F49900D9FCE7 /* Sinch.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Sinch.xcassets; path = WNPhone/Sinch.xcassets; sourceTree = "<group>"; };
+		9A021C5C1A71F4AB00D9FCE7 /* RPSlidingMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSlidingMenu.h; sourceTree = "<group>"; };
+		9A021C5D1A71F4AB00D9FCE7 /* RPSlidingMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSlidingMenuCell.h; sourceTree = "<group>"; };
+		9A021C5E1A71F4AB00D9FCE7 /* RPSlidingMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSlidingMenuCell.m; sourceTree = "<group>"; };
+		9A021C5F1A71F4AB00D9FCE7 /* RPSlidingMenuLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSlidingMenuLayout.h; sourceTree = "<group>"; };
+		9A021C601A71F4AB00D9FCE7 /* RPSlidingMenuLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSlidingMenuLayout.m; sourceTree = "<group>"; };
+		9A021C611A71F4AB00D9FCE7 /* RPSlidingMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPSlidingMenuViewController.h; sourceTree = "<group>"; };
+		9A021C621A71F4AB00D9FCE7 /* RPSlidingMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPSlidingMenuViewController.m; sourceTree = "<group>"; };
+		9A021C661A71F4BB00D9FCE7 /* AppDelegate+UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+UI.h"; path = "WNPhone/AppDelegate+UI.h"; sourceTree = "<group>"; };
+		9A021C671A71F4BB00D9FCE7 /* AppDelegate+UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+UI.m"; path = "WNPhone/AppDelegate+UI.m"; sourceTree = "<group>"; };
+		9A021C681A71F4BB00D9FCE7 /* CallViewController+UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CallViewController+UI.h"; path = "WNPhone/CallViewController+UI.h"; sourceTree = "<group>"; };
+		9A021C691A71F4BB00D9FCE7 /* CallViewController+UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CallViewController+UI.m"; path = "WNPhone/CallViewController+UI.m"; sourceTree = "<group>"; };
+		9A021C6C1A71F4CF00D9FCE7 /* CallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CallViewController.h; path = WNPhone/CallViewController.h; sourceTree = "<group>"; };
+		9A021C6D1A71F4CF00D9FCE7 /* CallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CallViewController.m; path = WNPhone/CallViewController.m; sourceTree = "<group>"; };
+		9A021C6E1A71F4CF00D9FCE7 /* SINUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SINUIViewController.h; path = WNPhone/SINUIViewController.h; sourceTree = "<group>"; };
+		9A021C6F1A71F4CF00D9FCE7 /* SINUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SINUIViewController.m; path = WNPhone/SINUIViewController.m; sourceTree = "<group>"; };
+		9A021C701A71F4CF00D9FCE7 /* WNPCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WNPCarViewController.h; path = WNPhone/WNPCarViewController.h; sourceTree = "<group>"; };
+		9A021C711A71F4CF00D9FCE7 /* WNPCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WNPCarViewController.m; path = WNPhone/WNPCarViewController.m; sourceTree = "<group>"; };
+		9A021C751A71F4DC00D9FCE7 /* MainStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryBoard.storyboard; path = WNPhone/MainStoryBoard.storyboard; sourceTree = "<group>"; };
+		9A1D7E321A70ABC0001611B3 /* Sinch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sinch.framework; sourceTree = "<group>"; };
+		9A78F0AD1A71E04200EC4F39 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9A78F0AF1A71EE9E00EC4F39 /* WNPDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNPDetailViewController.h; sourceTree = "<group>"; };
+		9A78F0B01A71EE9E00EC4F39 /* WNPDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNPDetailViewController.m; sourceTree = "<group>"; };
+		9A78F0B11A71EE9E00EC4F39 /* WNPDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WNPDetailViewController.xib; sourceTree = "<group>"; };
+		BC599AC8E20C8CE26168FDC0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C30E3531740B3F2DFDED1925 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F0C3F4B22A23C46C616993DA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46E6C44AA04238621D1E56CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A78F0AE1A71E04200EC4F39 /* CoreGraphics.framework in Frameworks */,
+				AFD3D1A37353D8D3A6CBA220 /* AVFoundation.framework in Frameworks */,
+				2C376FAA5F58182FD74E6A6A /* AudioToolbox.framework in Frameworks */,
+				9A1D7E331A70ABC0001611B3 /* Sinch.framework in Frameworks */,
+				890970C07F44B18913CC9092 /* Foundation.framework in Frameworks */,
+				23B4BE8C63D926A612FC3CBB /* Security.framework in Frameworks */,
+				8ED2D2CCEE9CE75F061ACAC1 /* SystemConfiguration.framework in Frameworks */,
+				818205A44A548796C40C28C3 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		161EE873E494BD22D269ED1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A78F0AD1A71E04200EC4F39 /* CoreGraphics.framework */,
+				9A1D7E321A70ABC0001611B3 /* Sinch.framework */,
+				858CDB607F162D29151DE477 /* AVFoundation.framework */,
+				F0C3F4B22A23C46C616993DA /* AudioToolbox.framework */,
+				025D8459675BCC18647D7750 /* Foundation.framework */,
+				BC599AC8E20C8CE26168FDC0 /* Security.framework */,
+				C30E3531740B3F2DFDED1925 /* SystemConfiguration.framework */,
+				942791CFEE305BC79E3AA846 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A021C5A1A71F4AB00D9FCE7 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				9A021C5B1A71F4AB00D9FCE7 /* RPSlidingMenu */,
+			);
+			name = ThirdParty;
+			path = WNPhone/ThirdParty;
+			sourceTree = "<group>";
+		};
+		9A021C5B1A71F4AB00D9FCE7 /* RPSlidingMenu */ = {
+			isa = PBXGroup;
+			children = (
+				9A021C5C1A71F4AB00D9FCE7 /* RPSlidingMenu.h */,
+				9A021C5D1A71F4AB00D9FCE7 /* RPSlidingMenuCell.h */,
+				9A021C5E1A71F4AB00D9FCE7 /* RPSlidingMenuCell.m */,
+				9A021C5F1A71F4AB00D9FCE7 /* RPSlidingMenuLayout.h */,
+				9A021C601A71F4AB00D9FCE7 /* RPSlidingMenuLayout.m */,
+				9A021C611A71F4AB00D9FCE7 /* RPSlidingMenuViewController.h */,
+				9A021C621A71F4AB00D9FCE7 /* RPSlidingMenuViewController.m */,
+			);
+			path = RPSlidingMenu;
+			sourceTree = "<group>";
+		};
+		9A78F0B41A71EEB000EC4F39 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9A021C661A71F4BB00D9FCE7 /* AppDelegate+UI.h */,
+				9A021C671A71F4BB00D9FCE7 /* AppDelegate+UI.m */,
+				9A021C681A71F4BB00D9FCE7 /* CallViewController+UI.h */,
+				9A021C691A71F4BB00D9FCE7 /* CallViewController+UI.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		9A78F0B51A71EEC500EC4F39 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9A021C6C1A71F4CF00D9FCE7 /* CallViewController.h */,
+				9A021C6D1A71F4CF00D9FCE7 /* CallViewController.m */,
+				9A021C6E1A71F4CF00D9FCE7 /* SINUIViewController.h */,
+				9A021C6F1A71F4CF00D9FCE7 /* SINUIViewController.m */,
+				9A021C701A71F4CF00D9FCE7 /* WNPCarViewController.h */,
+				9A021C711A71F4CF00D9FCE7 /* WNPCarViewController.m */,
+				9A78F0AF1A71EE9E00EC4F39 /* WNPDetailViewController.h */,
+				9A78F0B01A71EE9E00EC4F39 /* WNPDetailViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9A78F0B61A71EF2600EC4F39 /* NIB */ = {
+			isa = PBXGroup;
+			children = (
+				9A021C751A71F4DC00D9FCE7 /* MainStoryBoard.storyboard */,
+				9A78F0B11A71EE9E00EC4F39 /* WNPDetailViewController.xib */,
+			);
+			name = NIB;
+			sourceTree = "<group>";
+		};
+		BB5C3B7E6BA2270AF477298E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A021C4F1A71F48700D9FCE7 /* incoming.wav */,
+				9A021C501A71F48700D9FCE7 /* Info.plist */,
+				9A021C511A71F48700D9FCE7 /* main.m */,
+				9A021C521A71F48700D9FCE7 /* Prefix.pch */,
+				9A021C531A71F48700D9FCE7 /* ringback.wav */,
+				9A021C581A71F49900D9FCE7 /* Sinch.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C89FACD3041247E231AA32D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				578F96AF4F91F77EA1692297 /* WNPhone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9288E332B0DC1AD7450374F /* SinchCalling */ = {
+			isa = PBXGroup;
+			children = (
+				9A78F0B61A71EF2600EC4F39 /* NIB */,
+				9A78F0B51A71EEC500EC4F39 /* Controllers */,
+				9A78F0B41A71EEB000EC4F39 /* Category */,
+				9A021C5A1A71F4AB00D9FCE7 /* ThirdParty */,
+				9A021C4C1A71F47900D9FCE7 /* AppDelegate.h */,
+				9A021C4D1A71F47900D9FCE7 /* AppDelegate.m */,
+				BB5C3B7E6BA2270AF477298E /* Supporting Files */,
+			);
+			name = SinchCalling;
+			sourceTree = "<group>";
+		};
+		DE0522BF53A4DE62F71B2A90 = {
+			isa = PBXGroup;
+			children = (
+				161EE873E494BD22D269ED1D /* Frameworks */,
+				C89FACD3041247E231AA32D5 /* Products */,
+				C9288E332B0DC1AD7450374F /* SinchCalling */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC98C3BA92A8E52CF22BD81C /* WNPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C96C4DF31DDFD1FFDDCE529 /* Build configuration list for PBXNativeTarget "WNPhone" */;
+			buildPhases = (
+				0220DACF0D66F5121EE3288E /* Resources */,
+				F923315EAC5B12B1449E69DB /* Sources */,
+				46E6C44AA04238621D1E56CB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WNPhone;
+			productName = SinchCalling;
+			productReference = 578F96AF4F91F77EA1692297 /* WNPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7ADEF68A913C8D74B04B8DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 4F0A6BC8EAAF4CC262894060 /* Build configuration list for PBXProject "WNPhone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DE0522BF53A4DE62F71B2A90;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC98C3BA92A8E52CF22BD81C /* WNPhone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0220DACF0D66F5121EE3288E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A021C571A71F48700D9FCE7 /* ringback.wav in Resources */,
+				9A021C761A71F4DC00D9FCE7 /* MainStoryBoard.storyboard in Resources */,
+				9A021C591A71F49900D9FCE7 /* Sinch.xcassets in Resources */,
+				9A021C541A71F48700D9FCE7 /* incoming.wav in Resources */,
+				9A78F0B31A71EE9E00EC4F39 /* WNPDetailViewController.xib in Resources */,
+				9A021C551A71F48700D9FCE7 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F923315EAC5B12B1449E69DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A021C6A1A71F4BB00D9FCE7 /* AppDelegate+UI.m in Sources */,
+				9A021C731A71F4CF00D9FCE7 /* SINUIViewController.m in Sources */,
+				9A021C651A71F4AB00D9FCE7 /* RPSlidingMenuViewController.m in Sources */,
+				9A021C631A71F4AB00D9FCE7 /* RPSlidingMenuCell.m in Sources */,
+				9A021C741A71F4CF00D9FCE7 /* WNPCarViewController.m in Sources */,
+				9A021C721A71F4CF00D9FCE7 /* CallViewController.m in Sources */,
+				9A021C6B1A71F4BB00D9FCE7 /* CallViewController+UI.m in Sources */,
+				9A021C4E1A71F47900D9FCE7 /* AppDelegate.m in Sources */,
+				9A021C561A71F48700D9FCE7 /* main.m in Sources */,
+				9A78F0B21A71EE9E00EC4F39 /* WNPDetailViewController.m in Sources */,
+				9A021C641A71F4AB00D9FCE7 /* RPSlidingMenuLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1BC07D0E04C38D24D6D82A5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ARCHS_STANDARD[sdk=iphoneos*]" = armv7;
+				"ARCHS_STANDARD[sdk=iphonesimulator*]" = i386;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Human Services Hub, Corp.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Human Services Hub, Corp.";
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "iPhone Distribution: Human Services Hub, Corp.";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					..,
+					"$(PROJECT_DIR)",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					"DEBUG=1",
+				);
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				GCC_WARN_PEDANTIC = YES;
+				INFOPLIST_FILE = "${PRODUCT_NAME}/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/System/Library/Frameworks",
+					.,
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-Xlinker",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = WNPhone;
+				PROVISIONING_PROFILE = "b25b5213-e49a-4aeb-9e7c-f262fb7e496c";
+				SINCH_FRAMEWORK_RELATIVE_PATH = ..;
+				VALID_ARCHS = "armv7 i386";
+				WRAPPER_PREFIX = "";
+			};
+			name = Debug;
+		};
+		58D47A4D7DB9481CC51CBB56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"ARCHS_STANDARD[sdk=iphoneos*]" = armv7;
+				"ARCHS_STANDARD[sdk=iphonesimulator*]" = i386;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Human Services Hub, Corp.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					..,
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					"NS_BLOCK_ASSERTIONS=1",
+				);
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				GCC_WARN_PEDANTIC = YES;
+				INFOPLIST_FILE = "${PRODUCT_NAME}/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/System/Library/Frameworks",
+					.,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-Xlinker",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = WNPhone;
+				PROVISIONING_PROFILE = "b25b5213-e49a-4aeb-9e7c-f262fb7e496c";
+				SINCH_FRAMEWORK_RELATIVE_PATH = ..;
+				VALID_ARCHS = "armv7 i386";
+				WRAPPER_PREFIX = "";
+			};
+			name = Release;
+		};
+		A0AA51B10D0E9E6EE5D5E9AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Human Services Hub, Corp.";
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "b25b5213-e49a-4aeb-9e7c-f262fb7e496c";
+				SDKROOT = iphoneos;
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+			};
+			name = Debug;
+		};
+		EEED69D9ACDCAC7E9AE306DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Human Services Hub, Corp.";
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				PROVISIONING_PROFILE = "b25b5213-e49a-4aeb-9e7c-f262fb7e496c";
+				SDKROOT = iphoneos;
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C96C4DF31DDFD1FFDDCE529 /* Build configuration list for PBXNativeTarget "WNPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BC07D0E04C38D24D6D82A5C /* Debug */,
+				58D47A4D7DB9481CC51CBB56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		4F0A6BC8EAAF4CC262894060 /* Build configuration list for PBXProject "WNPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0AA51B10D0E9E6EE5D5E9AB /* Debug */,
+				EEED69D9ACDCAC7E9AE306DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7ADEF68A913C8D74B04B8DA /* Project object */;
+}
